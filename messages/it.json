@@ -1,0 +1,563 @@
+{
+  "meta": {
+    "title": "Michael Kalachin — Digital Experiences",
+    "template": "%s — Michael Kalachin",
+    "description": "Esperienze digitali interattive all'intersezione tra ingegneria, design e motion. Questo sito è il portfolio.",
+    "pages": {
+      "configurator": { "title": "Configuratore", "description": "Configura la tua esperienza digitale e guarda il sistema crescere in 3D." },
+      "store": { "title": "Commerce", "description": "Demo commerce premium con carrello, checkout e stato ordine." },
+      "book": { "title": "Prenota una call", "description": "Prenota una consulenza – calendario, fasce orarie, conferma." },
+      "lab": { "title": "Lab", "description": "Esperimenti interattivi: particelle, shader, fisica, tipografia." },
+      "network": { "title": "Network", "description": "Disponibile per progetti – remoto, Europa, mondo." },
+      "portal": { "title": "Portale clienti", "description": "Demo di un portale clienti con milestone, file e analytics." },
+      "contact": { "title": "Contatto", "description": "Raccontami il tuo progetto." },
+      "legal": { "title": "Note legali", "description": "Note legali, privacy, cookie e condizioni." }
+    }
+  },
+  "nav": {
+    "index": "Index",
+    "experience": "Esperienza",
+    "capabilities": "Capacità",
+    "configurator": "Configuratore",
+    "commerce": "Commerce",
+    "book": "Prenota",
+    "lab": "Lab",
+    "network": "Network",
+    "portal": "Portale",
+    "contact": "Contatto",
+    "imprint": "Note legali",
+    "privacy": "Privacy",
+    "cookies": "Cookie",
+    "terms": "Condizioni",
+    "menu": "Menu",
+    "openMenu": "Apri menu",
+    "closeMenu": "Chiudi menu",
+    "language": "Lingua",
+    "skipToContent": "Vai al contenuto",
+    "cart": "Carrello",
+    "command": "Comandi",
+    "status": "Disponibile per progetti",
+    "previews": {
+      "index": "Ingresso cinematografico con nome 3D e universo di particelle.",
+      "configurator": "Costruisci il tuo progetto – il sistema 3D cresce con esso.",
+      "store": "Demo commerce: prodotti, carrello, checkout.",
+      "book": "Calendario orbitale per consulenze.",
+      "lab": "Una mostra digitale di esperimenti tecnici.",
+      "network": "Le particelle diventano un globo.",
+      "portal": "Portale clienti con dati live (demo).",
+      "contact": "Un modulo con conferma a particelle."
+    }
+  },
+  "common": {
+    "demo": "Demo",
+    "demoEnvironment": "Ambiente demo",
+    "interactiveEstimate": "Stima interattiva · Demo",
+    "loading": "Caricamento",
+    "back": "Indietro",
+    "next": "Avanti",
+    "previous": "Precedente",
+    "reset": "Reimposta",
+    "copy": "Copia",
+    "copied": "Copiato",
+    "download": "Scarica",
+    "close": "Chiudi",
+    "learnMore": "Scopri di più",
+    "viewAll": "Vedi tutto",
+    "required": "Obbligatorio",
+    "optional": "Facoltativo",
+    "remove": "Rimuovi",
+    "add": "Aggiungi",
+    "submit": "Invia",
+    "sending": "Invio",
+    "search": "Cerca",
+    "noResults": "Nessun risultato",
+    "from": "da",
+    "to": "a",
+    "weeks": "{count, plural, one {# settimana} other {# settimane}}",
+    "open": "Apri",
+    "select": "Seleziona",
+    "selected": "Selezionato",
+    "explore": "Esplora",
+    "enter": "Entra",
+    "system": "Sistema",
+    "scroll": "Scorri",
+    "soundOn": "Suono attivo",
+    "soundOff": "Suono disattivo",
+    "motionOn": "Motion attivo",
+    "motionOff": "Motion ridotto",
+    "openConfigurator": "Apri configuratore",
+    "openStore": "Apri store",
+    "bookCall": "Prenota una call",
+    "startProject": "Avvia un progetto",
+    "letsBuild": "Costruiamo qualcosa di straordinario."
+  },
+  "loader": {
+    "labels": ["Sistema", "Motion", "Motore 3D", "Interazione", "Commerce", "Realtime", "Connesso"],
+    "ready": "Pronto"
+  },
+  "hero": {
+    "eyebrow": "Digital Experiences",
+    "disciplines": "Ingegneria × Design × Motion",
+    "cta": "Entra nell'esperienza",
+    "scroll": "Scorri per entrare",
+    "location": "Svizzera · Remoto in tutto il mondo",
+    "srTitle": "Michael Kalachin – Digital Experiences. Ingegneria, design e motion."
+  },
+  "home": {
+    "statement": {
+      "label": "Atto II · Oltre lo schermo",
+      "line1": "Non costruisco pagine.",
+      "line2": "Costruisco spazi",
+      "line3": "in cui entrare.",
+      "body": "Questo sito non è un portfolio sul mio lavoro. È il lavoro. Ogni scena, ogni transizione e ogni componente funzionale è stato costruito per mostrare cosa è possibile con l'ingegneria moderna e lo sviluppo assistito dall'IA."
+    },
+    "system": {
+      "label": "Atto III · Sistema",
+      "title": "Un sistema digitale prende forma.",
+      "stages": ["Punto", "Particelle", "Wireframe", "Struttura", "Interfaccia", "Componenti", "Ecosistema"],
+      "caption": "Dal primo punto all'ecosistema completo – design, motion, codice, 3D, commerce e sistemi si incastrano."
+    },
+    "capabilities": {
+      "label": "Atto IV · Capacità",
+      "title": "Non elencate. Dimostrate.",
+      "items": {
+        "motion": { "title": "Motion", "body": "Timeline legate allo scroll, deterministiche e reversibili.", "tag": "GSAP · ScrollTrigger" },
+        "three": { "title": "3D", "body": "Oggetti WebGL con materiali fisici e riflessi in tempo reale.", "tag": "Three.js · R3F" },
+        "commerce": { "title": "Commerce", "body": "Carrello, checkout e stato ordine – validati sul server.", "tag": "Adapter · Zod" },
+        "booking": { "title": "Prenotazioni", "body": "Un calendario che nasce da un'orbita.", "tag": "Fusi · Slot" },
+        "data": { "title": "Data", "body": "Visualizzazioni che si costruiscono da sole.", "tag": "Realtime · SVG" },
+        "maps": { "title": "Mappe", "body": "Particelle che diventano un globo.", "tag": "Procedurale" },
+        "i18n": { "title": "Multilingue", "body": "Cinque lingue, un'architettura.", "tag": "DE · EN · FR · IT · ES" }
+      },
+      "dataLabels": ["Performance", "Interazione", "Conversione", "Stabilità"]
+    },
+    "configuratorTeaser": {
+      "label": "Atto V · Configuratore",
+      "title": "Costruisci la tua esperienza digitale.",
+      "body": "Ogni decisione cambia l'oggetto. Il commerce aggiunge uno strato, il 3D un'orbita, le prenotazioni anelli temporali.",
+      "cta": "Apri configuratore"
+    },
+    "commerceTeaser": {
+      "label": "Atto VI · Commerce",
+      "title": "Bellezza e funzione non sono opposti.",
+      "body": "Un flusso d'acquisto completo – prodotto, varianti, carrello, checkout – a dimostrazione che animazione e logica di business coesistono.",
+      "cta": "Entra nello store"
+    },
+    "network": {
+      "label": "Atto VII · Connesso",
+      "title": "Disponibile per progetti.",
+      "body": "Collaborazione remota dalla Svizzera. Europa e mondo.",
+      "cta": "Vedi network"
+    },
+    "portalTeaser": {
+      "label": "Atto VIII · Esperienza cliente",
+      "title": "La trasparenza come prodotto.",
+      "body": "Un portale clienti con milestone, file, fatture e analytics live – una demo di dashboard engineering.",
+      "cta": "Apri portale"
+    },
+    "booking": {
+      "label": "Atto IX · Prenotazione",
+      "title": "Una conversazione. Non un modulo.",
+      "body": "Scegli una fascia oraria – il calendario si forma dall'orbita.",
+      "cta": "Scegli uno slot"
+    },
+    "final": {
+      "label": "Atto X · Finale",
+      "title": "Costruiamo qualcosa di straordinario.",
+      "cta": "Avvia un progetto",
+      "secondary": "Prenota una call"
+    }
+  },
+  "configurator": {
+    "title": "Costruisci la tua esperienza digitale",
+    "subtitle": "Ogni scelta cambia il sistema. Ruota, zooma, smontalo.",
+    "disclaimer": "Stima interattiva. Tutti i valori sono indicativi (demo) e non costituiscono un'offerta vincolante.",
+    "steps": {
+      "type": "Tipo di progetto",
+      "direction": "Direzione visiva",
+      "three": "Intensità 3D",
+      "motion": "Intensità motion",
+      "pages": "Pagine",
+      "features": "Funzionalità",
+      "languages": "Lingue",
+      "integrations": "Integrazioni",
+      "summary": "Riepilogo"
+    },
+    "options": {
+      "type": {
+        "corporate": "Sito corporate", "luxury": "Brand di lusso", "ecommerce": "E-commerce", "portfolio": "Portfolio",
+        "launch": "Lancio prodotto", "saas": "SaaS", "experience": "Esperienza interattiva", "custom": "Su misura"
+      },
+      "direction": { "minimal": "Minimale", "editorial": "Editoriale", "futuristic": "Futuristico", "luxury": "Lusso", "experimental": "Sperimentale", "technical": "Tecnico" },
+      "three": { "none": "Nessuna", "subtle": "Sottile", "immersive": "Immersiva", "cinematic": "Cinematografica" },
+      "motion": { "standard": "Standard", "advanced": "Avanzato", "studio": "Studio", "experimental": "Sperimentale" },
+      "pages": { "home": "Home", "about": "About", "services": "Servizi", "products": "Prodotti", "shop": "Shop", "dashboard": "Dashboard", "blog": "Blog", "booking": "Prenotazioni", "contact": "Contatto", "custom": "Su misura" },
+      "features": {
+        "ecommerce": "E-commerce", "auth": "Autenticazione", "cms": "CMS", "booking": "Prenotazioni", "payments": "Pagamenti", "maps": "Mappe",
+        "model3d": "Modello prodotto 3D", "realtime": "Dati realtime", "analytics": "Analytics", "i18n": "Multilingue", "dashboard": "Dashboard",
+        "search": "Ricerca", "ai": "Integrazione IA", "forms": "Moduli", "upload": "Upload file", "portal": "Portale clienti", "animations": "Animazioni", "charts": "Grafici interattivi"
+      },
+      "languages": { "de": "Tedesco", "en": "Inglese", "fr": "Francese", "it": "Italiano", "es": "Spagnolo" },
+      "integrations": { "stripe": "Stripe", "supabase": "Supabase", "vercel": "Vercel", "analytics": "Analytics", "crm": "CRM", "calendar": "Calendario", "maps": "Mappe", "email": "E-mail", "api": "API su misura" }
+    },
+    "model": {
+      "rotate": "Trascina per ruotare",
+      "explode": "Esplodi",
+      "assemble": "Riassembla",
+      "layers": "Strati",
+      "core": "Nucleo"
+    },
+    "summary": {
+      "title": "Riepilogo progetto",
+      "complexity": "Complessità",
+      "range": "Range stimato",
+      "timeline": "Tempi stimati",
+      "layers": "Strati di sistema",
+      "brief": "Brief di progetto",
+      "copyBrief": "Copia brief",
+      "downloadBrief": "Scarica brief",
+      "sendInquiry": "Invia richiesta",
+      "bookConsultation": "Prenota consulenza",
+      "empty": "Nessuna selezione",
+      "score": "Score"
+    },
+    "brief": {
+      "heading": "Brief di progetto",
+      "type": "Tipo di progetto",
+      "direction": "Direzione",
+      "intensity": "Intensità",
+      "pages": "Pagine",
+      "features": "Funzionalità",
+      "languages": "Lingue",
+      "integrations": "Integrazioni",
+      "estimate": "Stima",
+      "generated": "Generato con il configuratore interattivo su michaelkalachin.ch – valori demo."
+    }
+  },
+  "store": {
+    "title": "Commerce",
+    "subtitle": "Pacchetti concettuali come demo commerce. Carrello, checkout e stato ordine sono pienamente funzionanti.",
+    "addToCart": "Aggiungi al carrello",
+    "added": "Aggiunto",
+    "wishlist": "Salva",
+    "wishlisted": "Salvato",
+    "variant": "Variante",
+    "details": "Dettagli",
+    "includes": "Incluso",
+    "viewProduct": "Vedi prodotto",
+    "conceptual": "Pacchetto concettuale · Demo",
+    "products": {
+      "foundation": {
+        "name": "Digital Foundation",
+        "tagline": "Le fondamenta. Costruite con precisione.",
+        "description": "Un sito performante e multilingue con design system, architettura SEO e moduli. Costruito per anni, non settimane.",
+        "includes": ["Design system", "Fino a 6 pagine", "SEO & metadati", "Moduli validati", "Due lingue"]
+      },
+      "interactive": {
+        "name": "Interactive Experience",
+        "tagline": "Lo scroll diventa racconto.",
+        "description": "Sequenze scroll cinematografiche, motion design e microinterazioni sopra la Digital Foundation.",
+        "includes": ["Tutto di Foundation", "Timeline scroll", "Transizioni di pagina", "Microinterazioni", "Accessibilità motion"]
+      },
+      "commerce": {
+        "name": "Commerce System",
+        "tagline": "Vendere senza compromessi.",
+        "description": "Catalogo prodotti, carrello, checkout con pagamento, stato ordine e account cliente.",
+        "includes": ["Catalogo prodotti", "Carrello & checkout", "Adapter pagamenti", "Stato ordine", "Account cliente"]
+      },
+      "three": {
+        "name": "3D Experience",
+        "tagline": "Vera profondità. Veri materiali.",
+        "description": "Scene WebGL, modelli prodotto 3D, sistemi di particelle e shader – performanti e accessibili.",
+        "includes": ["Scena WebGL persistente", "Modelli prodotto 3D", "Sistemi di particelle", "Shader custom", "Performance adattiva"]
+      },
+      "flagship": {
+        "name": "Flagship Build",
+        "tagline": "Tutto. Come un unico sistema.",
+        "description": "L'esperienza completa: brand, 3D, motion, commerce, prenotazioni, portale e multilingue in un ecosistema coerente.",
+        "includes": ["Tutto di tutti i pacchetti", "Portale clienti", "Sistema prenotazioni", "Cinque lingue", "Supporto dedicato"]
+      }
+    },
+    "variants": {
+      "tier": "Ambito",
+      "essential": "Essential",
+      "extended": "Extended",
+      "signature": "Signature"
+    }
+  },
+  "cart": {
+    "title": "Carrello",
+    "empty": "Il tuo carrello è vuoto.",
+    "emptyBody": "Per ora solo spazio. Esplora i pacchetti.",
+    "browse": "Esplora lo store",
+    "subtotal": "Subtotale",
+    "discount": "Sconto",
+    "total": "Totale",
+    "coupon": "Codice sconto",
+    "applyCoupon": "Applica",
+    "couponApplied": "Codice {code} applicato",
+    "couponInvalid": "Questo codice non è valido.",
+    "checkout": "Vai al checkout",
+    "quantity": "Quantità",
+    "remove": "Rimuovi",
+    "increase": "Aumenta quantità",
+    "decrease": "Riduci quantità",
+    "items": "{count, plural, =0 {Nessun articolo} one {# articolo} other {# articoli}}",
+    "demoHint": "Codice demo: STUDIO10"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "demoMode": "Checkout demo. Nessun pagamento reale viene effettuato.",
+    "testMode": "Modalità test Stripe. Nessun pagamento reale viene effettuato.",
+    "contact": "Contatto",
+    "billing": "Indirizzo di fatturazione",
+    "payment": "Pagamento",
+    "fields": {
+      "email": "E-mail",
+      "name": "Nome completo",
+      "company": "Azienda",
+      "address": "Indirizzo",
+      "city": "Città",
+      "postal": "CAP",
+      "country": "Paese"
+    },
+    "pay": "Completa l'ordine",
+    "processing": "Elaborazione",
+    "summary": "Riepilogo ordine",
+    "secure": "I prezzi sono validati sul server.",
+    "success": {
+      "title": "Ordine confermato.",
+      "body": "Grazie. Il tuo ordine demo è stato registrato.",
+      "order": "Numero ordine",
+      "status": "Stato",
+      "statusValue": "Confermato · Demo",
+      "backToStore": "Torna allo store",
+      "home": "Home"
+    },
+    "errors": {
+      "empty": "Il carrello è vuoto.",
+      "priceMismatch": "Impossibile validare i prezzi.",
+      "generic": "Il checkout non è stato completato."
+    }
+  },
+  "book": {
+    "title": "Prenota una conversazione",
+    "subtitle": "Scegli un servizio, una data e una fascia oraria. Il calendario è un'orbita.",
+    "steps": { "service": "Servizio", "date": "Data", "time": "Ora", "details": "Dettagli", "confirm": "Conferma" },
+    "services": {
+      "discovery": { "name": "Discovery Call", "duration": "30 min", "body": "Presentazioni, obiettivi, primo inquadramento." },
+      "strategy": { "name": "Sessione strategica", "duration": "60 min", "body": "Analisi approfondita della tua situazione digitale." },
+      "review": { "name": "Revisione tecnica", "duration": "45 min", "body": "Prodotto esistente – performance, architettura, UX." }
+    },
+    "timezone": "Fuso orario",
+    "availableSlots": "Fasce disponibili",
+    "noSlots": "Nessuna fascia disponibile in questo giorno.",
+    "weekend": "Weekend",
+    "past": "Passato",
+    "selectDate": "Scegli una data",
+    "selectTime": "Scegli un'ora",
+    "fields": {
+      "name": "Nome",
+      "email": "E-mail",
+      "company": "Azienda",
+      "budget": "Budget progetto",
+      "type": "Tipo di progetto",
+      "message": "Messaggio"
+    },
+    "budgets": { "unsure": "Da definire", "s": "fino a 15.000", "m": "15.000 – 40.000", "l": "40.000 – 80.000", "xl": "80.000+" },
+    "confirm": "Conferma appuntamento",
+    "confirming": "Conferma in corso",
+    "confirmed": {
+      "title": "Appuntamento confermato.",
+      "body": "Riceverai una conferma a {email}.",
+      "reference": "Riferimento",
+      "demo": "Disponibilità demo. Nessuna voce reale è stata creata."
+    },
+    "summary": "Riepilogo",
+    "months": ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"],
+    "weekdays": ["Lu", "Ma", "Me", "Gi", "Ve", "Sa", "Do"],
+    "prevMonth": "Mese precedente",
+    "nextMonth": "Mese successivo"
+  },
+  "contact": {
+    "title": "Raccontami il tuo progetto.",
+    "subtitle": "Bastano poche righe. Di solito rispondo entro due giorni lavorativi.",
+    "fields": {
+      "name": "Nome",
+      "email": "E-mail",
+      "company": "Azienda",
+      "type": "Tipo di progetto",
+      "budget": "Range di budget",
+      "timeline": "Tempistiche",
+      "message": "Messaggio",
+      "attachment": "Allegato"
+    },
+    "timelines": { "asap": "Il prima possibile", "q": "Entro 3 mesi", "h": "Entro 6 mesi", "open": "Aperto" },
+    "attachmentHint": "PDF, PNG o JPG · max. 5 MB",
+    "submit": "Invia messaggio",
+    "success": {
+      "title": "Messaggio ricevuto.",
+      "body": "Grazie, {name}. Ti risponderò presto.",
+      "again": "Nuovo messaggio"
+    },
+    "direct": "Oppure direttamente",
+    "errors": {
+      "generic": "Impossibile inviare il messaggio. Riprova."
+    }
+  },
+  "validation": {
+    "required": "Questo campo è obbligatorio.",
+    "email": "Inserisci un indirizzo e-mail valido.",
+    "minLength": "Almeno {min} caratteri.",
+    "maxLength": "Massimo {max} caratteri.",
+    "fileType": "Solo PDF, PNG o JPG.",
+    "fileSize": "File troppo grande (max. 5 MB).",
+    "select": "Scegli un'opzione.",
+    "formError": "Controlla i campi evidenziati."
+  },
+  "portal": {
+    "title": "Portale clienti",
+    "badge": "Ambiente demo",
+    "project": "Progetto",
+    "completion": "Avanzamento",
+    "milestones": "Milestone",
+    "timeline": "Timeline",
+    "tasks": "Attività",
+    "messages": "Messaggi",
+    "files": "File",
+    "invoices": "Fatture",
+    "meetings": "Appuntamenti",
+    "activity": "Attività recente",
+    "analytics": "Analytics",
+    "status": { "done": "Completato", "active": "In corso", "planned": "Pianificato", "paid": "Pagata", "open": "Aperta", "draft": "Bozza" },
+    "metrics": { "lcp": "LCP", "fps": "Frame / s", "uptime": "Uptime", "visitors": "Visitatori" },
+    "disclaimer": "Tutti i dati sono sintetici. Nessun cliente reale, nessun progetto reale.",
+    "overview": "Panoramica",
+    "nextMeeting": "Prossimo appuntamento",
+    "sendMessage": "Invia",
+    "reply": "Scrivi una risposta"
+  },
+  "lab": {
+    "title": "Lab",
+    "subtitle": "Una mostra digitale. Ogni pezzo è un esperimento funzionante.",
+    "experiments": {
+      "particles": { "title": "Particle Field", "body": "Attrazione e repulsione del cursore in un campo di particelle GPU." },
+      "shader": { "title": "Liquid Chrome", "body": "Un materiale cromato procedurale che reagisce a tempo e puntatore." },
+      "magnetic": { "title": "Magnetic Elements", "body": "Elementi che seguono il puntatore – con inerzia e ritorno." },
+      "typography": { "title": "Type Distortion", "body": "Spaziatura variabile e distorsione guidate dal movimento." },
+      "lighting": { "title": "Interactive Lighting", "body": "Luci puntiformi che danno forma a un oggetto 3D." },
+      "glass": { "title": "Glass Refraction", "body": "Trasmissione e rifrazione su una geometria di vetro." },
+      "data": { "title": "Data Visualization", "body": "Un grafico che si costruisce da punti." },
+      "cards": { "title": "Drag Cards", "body": "Tessere con fisica, inclinazione e riflessi." },
+      "color": { "title": "Realtime Color System", "body": "I token cambiano live – tutta la pagina reagisce." }
+    },
+    "exhibit": "Pezzo"
+  },
+  "network": {
+    "title": "Connesso.",
+    "subtitle": "Disponibile per progetti – remoto, dalla Svizzera, per l'Europa e il mondo.",
+    "labels": { "available": "Disponibile per progetti", "remote": "Collaborazione remota", "region": "Europa / Mondo" },
+    "regions": {
+      "zurich": { "name": "Zurigo", "body": "Base per workshop e incontri di persona." },
+      "lucerne": { "name": "Lucerna", "body": "Seconda sede per riunioni in loco." },
+      "europe": { "name": "Europa", "body": "Progetti remoti in tutti i fusi europei." },
+      "global": { "name": "Mondo", "body": "Collaborazione asincrona tra continenti." }
+    },
+    "hint": "Trascina per ruotare · Seleziona una regione"
+  },
+  "footer": {
+    "location": "Svizzera",
+    "availability": "Disponibile in tutto il mondo",
+    "discipline": "Digital Experiences",
+    "cta": "Costruiamo qualcosa di straordinario.",
+    "ctaButton": "Avvia un progetto",
+    "rights": "Tutti i diritti riservati.",
+    "builtWith": "Costruito come proprio sistema portfolio.",
+    "language": "Lingua"
+  },
+  "palette": {
+    "placeholder": "Cerca un comando o una pagina…",
+    "hint": "Naviga con ↑↓ · Apri con ↵ · Chiudi con Esc",
+    "groups": { "navigate": "Navigazione", "actions": "Azioni", "language": "Lingua" },
+    "commands": {
+      "home": "Vai alla home",
+      "configurator": "Apri configuratore",
+      "store": "Apri demo commerce",
+      "book": "Prenota consulenza",
+      "lab": "Apri lab",
+      "network": "Apri network",
+      "portal": "Apri portale",
+      "contact": "Contatto",
+      "toggleMotion": "Attiva/disattiva motion",
+      "toggleSound": "Attiva/disattiva suono",
+      "surface": "Under the Surface",
+      "appearance": "Appearance builder",
+      "cart": "Apri carrello"
+    },
+    "open": "Apri la palette comandi"
+  },
+  "surface": {
+    "title": "Under the Surface",
+    "subtitle": "Il sito si separa nei suoi strati.",
+    "activate": "Under the Surface",
+    "reassemble": "Riassembla",
+    "hint": "Trascina per ruotare",
+    "layers": {
+      "background": { "name": "Background", "body": "Gradiente ambientale, rumore e vignettatura." },
+      "lighting": { "name": "Lighting", "body": "Lightformer procedurali invece di file HDR." },
+      "three": { "name": "3D", "body": "Una scena WebGL persistente dietro il DOM." },
+      "content": { "name": "Content", "body": "HTML semantico – per SEO e screen reader." },
+      "interaction": { "name": "Interaction", "body": "Timeline scroll, magnetismo, tastiera." },
+      "data": { "name": "Data", "body": "Stato, validazione, localizzazione." },
+      "commerce": { "name": "Commerce", "body": "Carrello, prezzi, checkout – verificati sul server." },
+      "api": { "name": "API", "body": "Adapter per pagamenti, prenotazioni ed e-mail." }
+    }
+  },
+  "appearance": {
+    "title": "Aspetto",
+    "subtitle": "Cambia l'esperienza in tempo reale.",
+    "accent": "Accento",
+    "motion": "Motion",
+    "density": "Densità particelle",
+    "material": "Materiale",
+    "lighting": "Luce",
+    "reset": "Reimposta",
+    "accents": { "ice": "Ice", "violet": "Violet", "silver": "Silver", "pearl": "Pearl" },
+    "materials": { "chrome": "Cromo", "titanium": "Titanio", "glass": "Vetro", "obsidian": "Ossidiana" },
+    "open": "Apri aspetto"
+  },
+  "errors": {
+    "notFound": { "code": "404", "title": "Questa pagina non esiste.", "body": "Le particelle hanno provato a formarla – senza riuscirci.", "cta": "Home" },
+    "server": { "code": "500", "title": "Qualcosa è andato storto.", "body": "Il sistema ha rilevato e registrato un errore.", "cta": "Riprova" },
+    "offline": { "title": "Offline", "body": "La connessione è stata interrotta. L'esperienza continua in modalità ridotta." },
+    "noResults": "Nessun risultato per “{query}”."
+  },
+  "legal": {
+    "imprint": {
+      "title": "Note legali",
+      "body": "Segnaposto. Nome, indirizzo e contatti del gestore secondo la legge applicabile. Il contenuto sarà completato prima della pubblicazione."
+    },
+    "privacy": {
+      "title": "Privacy",
+      "body": "Segnaposto. Questo sito non memorizza dati personali senza inserimento esplicito. I dati dei moduli sono usati solo per gestire la richiesta. Dichiarazione completa in arrivo."
+    },
+    "cookies": {
+      "title": "Cookie",
+      "body": "Segnaposto. Vengono usati solo cookie tecnicamente necessari (lingua, carrello). Nessun cookie di tracciamento senza consenso."
+    },
+    "terms": {
+      "title": "Condizioni generali",
+      "body": "Segnaposto. I pacchetti e i prezzi mostrati sono contenuti demo e non costituiscono un'offerta vincolante."
+    },
+    "placeholder": "Segnaposto configurabile"
+  },
+  "a11y": {
+    "canvas": "Scena 3D decorativa",
+    "scrollProgress": "Avanzamento scroll",
+    "openCart": "Apri carrello",
+    "closeCart": "Chiudi carrello",
+    "openPalette": "Apri palette comandi",
+    "languageSwitch": "Cambia lingua",
+    "decorative": "Decorativo"
+  }
+}
