@@ -6,13 +6,11 @@ import { cn } from "@/lib/utils";
 import { usePreferences } from "@/stores/preferences";
 import { useUI } from "@/stores/ui";
 
-/** Understated dock: Under the Surface, Appearance, Motion, Sound. */
+/** Understated dock: Appearance, Motion, Sound. */
 export function ControlDock() {
-  const tSurface = useTranslations("surface");
   const tAppearance = useTranslations("appearance");
   const tCommon = useTranslations("common");
   const surfaceOpen = useUI((s) => s.surfaceOpen);
-  const setSurfaceOpen = useUI((s) => s.setSurfaceOpen);
   const appearanceOpen = useUI((s) => s.appearanceOpen);
   const setAppearanceOpen = useUI((s) => s.setAppearanceOpen);
   const loaderDone = useUI((s) => s.loaderDone);
@@ -32,15 +30,6 @@ export function ControlDock() {
       )}
       data-layer="interaction"
     >
-      {clientFeatures.surfaceView && (
-        <button type="button" onClick={() => setSurfaceOpen(true)} aria-label={tSurface("activate")} title={tSurface("activate")} className={item}>
-          <svg viewBox="0 0 20 20" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.1">
-            <path d="M3 7.5 10 4l7 3.5-7 3.5-7-3.5Z" />
-            <path d="M3 10.5 10 14l7-3.5" opacity="0.6" />
-            <path d="M3 13.5 10 17l7-3.5" opacity="0.35" />
-          </svg>
-        </button>
-      )}
       <button type="button" onClick={() => setAppearanceOpen(!appearanceOpen)} aria-pressed={appearanceOpen} aria-label={tAppearance("open")} title={tAppearance("open")} className={item}>
         <svg viewBox="0 0 20 20" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.1">
           <circle cx="10" cy="10" r="6.5" />

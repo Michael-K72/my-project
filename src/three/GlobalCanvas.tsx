@@ -14,7 +14,7 @@ import { ParticleUniverse } from "./ParticleUniverse";
 import { hexToRgb01, renderState } from "./state";
 import { StudioEnvironment } from "./StudioEnvironment";
 
-const PARTICLES: Record<QualityTier, number> = { high: 26000, medium: 13000, low: 6000 };
+const PARTICLES: Record<QualityTier, number> = { high: 14000, medium: 8000, low: 4000 };
 
 /** Heuristic quality tier. Engineering optimisations come first; this only trims on weak devices. */
 function detectQuality(): QualityTier {
@@ -95,11 +95,11 @@ export function GlobalCanvas() {
     const q = detectQuality();
     setQuality(q);
     setQualityPref(q);
-    setDpr(q === "high" ? Math.min(window.devicePixelRatio, 1.75) : q === "medium" ? 1.25 : 1);
+    setDpr(q === "high" ? Math.min(window.devicePixelRatio, 1.5) : q === "medium" ? 1.15 : 1);
   }, [setQualityPref]);
 
   const count = useMemo(() => PARTICLES[quality], [quality]);
-  const bloom = clientFeatures.bloom && quality !== "low";
+  const bloom = clientFeatures.bloom && quality === "high";
 
   return (
     <div className="fixed inset-0 z-0 pointer-events-none" aria-hidden="true" data-layer="three">
@@ -120,7 +120,7 @@ export function GlobalCanvas() {
       >
         <PerformanceMonitor
           onDecline={() => setDpr((d) => Math.max(0.9, d - 0.25))}
-          onIncline={() => setDpr((d) => Math.min(quality === "high" ? 1.75 : 1.25, d + 0.25))}
+          onIncline={() => setDpr((d) => Math.min(quality === "high" ? 1.5 : 1.15, d + 0.2))}
         />
         <StateBridge />
         <CameraRig />
@@ -130,8 +130,8 @@ export function GlobalCanvas() {
           <HeroName />
         </Suspense>
         {bloom && (
-          <EffectComposer multisampling={quality === "high" ? 4 : 0}>
-            <Bloom intensity={0.55} luminanceThreshold={0.72} luminanceSmoothing={0.2} mipmapBlur radius={0.6} />
+          <EffectComposer multisampling={0}>
+            <Bloom intensity={0.35} luminanceThreshold={0.78} luminanceSmoothing={0.25} mipmapBlur radius={0.45} />
           </EffectComposer>
         )}
       </Canvas>
