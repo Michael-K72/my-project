@@ -30,7 +30,7 @@ export const identity = {
     { id: "linkedin", label: "LinkedIn", href: "https://www.linkedin.com/" },
   ] as const,
   /** Canonical site URL used for metadata. Override with NEXT_PUBLIC_SITE_URL. */
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://michaelkalachin.ch",
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL?.trim() || "https://michaelkalachin.ch",
   /** Build label shown in technical annotations. */
   build: "BUILD 01",
 } as const;
